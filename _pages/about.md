@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Caltech</a>. Pasadena, CA. Contact me at: lsanmart@caltech.edu.
+subtitle: <a href='#'>Caltech</a>. Pasadena, CA. Contact me at: lsanmart-at-caltech.edu.
 
 profile:
   align: right
