@@ -2,7 +2,8 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+# nav: true # uncomment to show blog in the top menu
+nav: false
 nav_order: 1
 pagination:
   enabled: true

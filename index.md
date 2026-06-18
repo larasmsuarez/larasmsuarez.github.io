@@ -6,7 +6,7 @@ subtitle: "<a href='#'>Caltech</a>. Pasadena, CA. Contact me at: lsanmart-at-cal
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: 2026_headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>MC 253-37 Linde Hall of Mathematics</p>
