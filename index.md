@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /about/
+permalink: /
 subtitle: "<a href='#'>Caltech</a>. Pasadena, CA. Contact me at: lsanmart-at-caltech.edu."
 
 profile:
