@@ -1,6 +1,30 @@
 ---
 layout: default
 ---
+{% if page.cv_updated %}
+  <div class="post">
+    <header class="post-header">
+      <p class="post-description">
+        Updated: {{ page.cv_updated }}
+        {% if page.cv_pdf %}
+          <a
+            {% if page.cv_pdf contains '://' %}
+              href="{{ page.cv_pdf }}"
+            {% else %}
+              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
+            {% endif %}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="ml-2"
+            aria-label="Download CV PDF"
+          >
+            <i class="fa-solid fa-file-pdf"></i>
+          </a>
+        {% endif %}
+      </p>
+    </header>
+  </div>
+{% else %}
 {% unless site.data.resume %}
   <div class="post">
     <header class="post-header">
@@ -125,3 +149,4 @@ layout: default
     </article>
   </div>
 {% endunless %}
+{% endif %}
