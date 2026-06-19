@@ -1,0 +1,29 @@
+<div class="talks">
+  <div class="table-responsive">
+    <table class="table table-sm table-borderless">
+      {% for talk in site.data.talks %}
+        <tr>
+          <th scope="row" style="width: 20%">{{ talk.date }}</th>
+          <td>
+            <a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>.
+            {{ talk.location }}.
+            {{ talk.role }}.
+            {% if talk.slides_url %}
+              <a
+                {% if talk.slides_url contains '://' %}
+                  href="{{ talk.slides_url }}"
+                {% else %}
+                  href="{{ talk.slides_url | relative_url }}"
+                {% endif %}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ talk.slides }}
+              </a>.
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
