@@ -6,12 +6,7 @@ inline: false
 related_posts: false
 ---
 
-<img
-  src="{{ '/assets/img/ExcellenceStudies26.jpg' | relative_url }}"
-  alt="Scott Russell Johnson Achievement Award for Excellence in Graduate Studies"
-  class="img-fluid rounded float-right ml-4 mb-3"
-  style="max-width: 320px;"
->
+![Scott Russell Johnson Achievement Award for Excellence in Graduate Studies]({{ '/assets/img/ExcellenceStudies26.jpg' | relative_url }}){: .img-fluid .rounded .float-right .ml-4 .mb-3 style="max-width: 320px;" }
 
 I was awarded the Scott Russell Johnson Achievement Award for Excellence in Graduate Studies.
 
