@@ -729,16 +729,23 @@ footer.sticky-bottom {
         margin-right: 0;
       }
 
-      [class^="col"],
-      [class*=" col"] {
+      .publication-entry-full {
+        flex: 0 0 100%;
+        max-width: 100%;
         padding-left: 0;
         padding-right: 0;
+        width: 100%;
       }
     }
   }
 
   .talks,
   .news {
+    .table-responsive {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
     table {
       margin-left: 0;
     }

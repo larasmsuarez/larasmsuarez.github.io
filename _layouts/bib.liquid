@@ -52,7 +52,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{ entry.key }}" class="{% if show_publication_thumbnail %}col-sm-8{% else %}col-sm-12{% endif %}">
+  <div id="{{ entry.key }}" class="{% if show_publication_thumbnail %}col-sm-8{% else %}publication-entry-full{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
     <!-- Author -->
