@@ -3,5 +3,7 @@
   event_url: https://conferences.cirm-math.fr/3656.html
   location: CIRM, Marseille, France
   role: Invited speaker
+  based_on: 2026 ArXiv preprint
+  based_on_url: https://arxiv.org/abs/2512.23700
   slides: Talk slides
   slides_url: /assets/pdf/example_pdf.pdf

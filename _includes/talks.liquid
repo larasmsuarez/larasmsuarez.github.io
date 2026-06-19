@@ -9,6 +9,11 @@
             <em>{{ talk.role }}</em>.
             <br>
             {{ talk.location }}.
+            {% if talk.based_on and talk.based_on_url %}
+              <br>
+              Based on:
+              <a href="{{ talk.based_on_url }}" target="_blank" rel="noopener noreferrer">{{ talk.based_on }}</a>.
+            {% endif %}
             {% if talk.slides_url %}
               <br>
               <a
