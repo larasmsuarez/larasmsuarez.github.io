@@ -5,10 +5,12 @@
         <tr>
           <th scope="row" style="width: 20%">{{ talk.date }}</th>
           <td>
-            <a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a>.
+            <strong><a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a></strong>.
+            <em>{{ talk.role }}</em>.
+            <br>
             {{ talk.location }}.
-            {{ talk.role }}.
             {% if talk.slides_url %}
+              <br>
               <a
                 {% if talk.slides_url contains '://' %}
                   href="{{ talk.slides_url }}"

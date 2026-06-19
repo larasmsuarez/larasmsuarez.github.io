@@ -714,6 +714,41 @@ footer.sticky-bottom {
 
 // Publications
 
+.about-section {
+  margin-top: 2rem;
+
+  .publications {
+    margin-top: 0;
+
+    ol.bibliography {
+      margin-left: 0;
+      padding-left: 0;
+
+      .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      [class^="col"],
+      [class*=" col"] {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  .talks,
+  .news {
+    table {
+      margin-left: 0;
+    }
+
+    th:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
 .publications {
   margin-top: 2rem;
 
