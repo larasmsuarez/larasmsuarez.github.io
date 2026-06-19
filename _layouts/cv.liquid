@@ -4,8 +4,8 @@ layout: default
 {% if page.cv_updated %}
   <div class="post">
     <header class="post-header">
-      <p class="post-description">
-        Updated: {{ page.cv_updated }}
+      <div class="cv-header">
+        <h1 class="post-title">{{ page.title }}</h1>
         {% if page.cv_pdf %}
           <a
             {% if page.cv_pdf contains '://' %}
@@ -15,12 +15,15 @@ layout: default
             {% endif %}
             target="_blank"
             rel="noopener noreferrer"
-            class="ml-2"
+            class="cv-pdf-link"
             aria-label="Download CV PDF"
           >
             <i class="fa-solid fa-file-pdf"></i>
           </a>
         {% endif %}
+      </div>
+      <p class="post-description">
+        Updated: {{ page.cv_updated }}
       </p>
     </header>
   </div>

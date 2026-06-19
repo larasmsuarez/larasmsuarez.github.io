@@ -2,6 +2,28 @@
  * CV shared styles
  *****************************/
 
+.cv-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cv-header .post-title {
+  margin-bottom: 0;
+}
+
+.cv-pdf-link {
+  color: var(--global-theme-color);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.cv-pdf-link:hover {
+  color: var(--global-hover-color);
+  text-decoration: none;
+}
+
 div.container-link-button {
   margin-right: 0.5rem;
 }
