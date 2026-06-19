@@ -402,8 +402,8 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "news-i-was-awarded-the-scott-russell-johnson-achievement-award-for-excellence-in-graduate-studies",
-          title: 'I was awarded the Scott Russell Johnson Achievement Award for Excellence in Graduate...',
+          section: "News",},{id: "news-i-was-awarded-the-2026-scott-russell-johnson-achievement-award-for-excellence-in-graduate-studies",
+          title: 'I was awarded the 2026 Scott Russell Johnson Achievement Award for Excellence in...',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/scott-russell-johnson-achievement-award/";
