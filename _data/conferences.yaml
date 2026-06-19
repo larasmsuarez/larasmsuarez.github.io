@@ -1,3 +1,8 @@
+- date: July 10-17, 2026
+  event: Algebraic Structures in Topology
+  event_url: https://algtoppr.github.io/
+  location: San Juan, Puerto Rico, US
+  role: Attendee
 - date: June 1-5, 2026
   event: Vertex algebras, automorphic forms and combinatorics
   event_url: https://conferences.cirm-math.fr/3656.html
@@ -7,3 +12,4 @@
   based_on_url: https://arxiv.org/abs/2512.23700
   slides: Talk slides
   slides_url: /assets/pdf/example_pdf.pdf
+
