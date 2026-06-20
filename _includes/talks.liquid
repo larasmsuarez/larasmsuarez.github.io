@@ -5,12 +5,12 @@
         <tr>
           <th scope="row" style="width: 20%">{{ talk.date }}</th>
           <td>
-            {% if talk.event_url != blank %}
+            {%- if talk.event_url != blank -%}
               <strong><a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a></strong>
-            {% else %}
+            {%- else -%}
               <strong>{{ talk.event }}</strong>
-            {% endif -%}
-            {%- if talk.role != blank %}. <em>{{ talk.role }}</em>{% endif %}.
+            {%- endif -%}
+            .{%- if talk.role != blank %} <em>{{ talk.role }}</em>.{% endif %}
             {% if talk.location != blank %}
               <br>
               {{ talk.location }}.
