@@ -1,0 +1,8 @@
+- title: Sample Project Title
+  description: |
+    Replace this with a short project description. You can use Markdown links,
+    emphasis, and inline LaTeX such as $q = e^{\hbar}$.
+
+    You can also use display equations:
+
+    $$J_K(q) = \sum_n a_n q^n.$$
