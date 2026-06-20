@@ -3,7 +3,7 @@ layout: page
 title: Activities
 permalink: /activities/
 nav: true
-nav_order: 2
+nav_order: 4
 ---
 
 {% if site.data.conferences and site.data.conferences.size > 0 %}
