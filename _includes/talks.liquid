@@ -5,28 +5,36 @@
         <tr>
           <th scope="row" style="width: 20%">{{ talk.date }}</th>
           <td>
-            <strong><a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a></strong>.
-            <em>{{ talk.role }}</em>.
-            <br>
-            {{ talk.location }}.
-            {% if talk.based_on and talk.based_on_url %}
+            {% if talk.event_url != blank %}
+              <strong><a href="{{ talk.event_url }}" target="_blank" rel="noopener noreferrer">{{ talk.event }}</a></strong>
+            {% else %}
+              <strong>{{ talk.event }}</strong>
+            {% endif -%}
+            {%- if talk.role != blank %}. <em>{{ talk.role }}</em>{% endif %}.
+            {% if talk.location != blank %}
+              <br>
+              {{ talk.location }}.
+            {% endif %}
+            {% if talk.based_on != blank %}
               <br>
               Based on:
-              <a href="{{ talk.based_on_url }}" target="_blank" rel="noopener noreferrer">{{ talk.based_on }}</a>.
+              {% if talk.based_on_url != blank %}
+                <a href="{{ talk.based_on_url }}" target="_blank" rel="noopener noreferrer">{{ talk.based_on }}</a>.
+              {% else %}
+                {{ talk.based_on }}.
+              {% endif %}
             {% endif %}
-            {% if talk.slides_url %}
+            {% if talk.slides != blank and talk.slides_url != blank %}
+              {% if talk.slides_url contains '://' %}
+                {% assign slides_url = talk.slides_url %}
+              {% else %}
+                {% assign slides_url = talk.slides_url | relative_url %}
+              {% endif %}
               <br>
-              <a
-                {% if talk.slides_url contains '://' %}
-                  href="{{ talk.slides_url }}"
-                {% else %}
-                  href="{{ talk.slides_url | relative_url }}"
-                {% endif %}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {{ talk.slides }}
-              </a>.
+              <a href="{{ slides_url }}" target="_blank" rel="noopener noreferrer">{{ talk.slides }}</a>.
+            {% elsif talk.slides != blank %}
+              <br>
+              {{ talk.slides }}.
             {% endif %}
           </td>
         </tr>
