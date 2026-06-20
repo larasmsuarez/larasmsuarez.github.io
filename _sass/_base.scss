@@ -822,6 +822,14 @@ footer.sticky-bottom {
         font-weight: bolder;
       }
 
+      .article-summary-toggle {
+        cursor: pointer;
+      }
+
+      .article-summary-toggle:hover {
+        color: var(--global-theme-color);
+      }
+
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
