@@ -1,14 +1,14 @@
 ---
 layout: page
-title: submenus
+title: Submenus
 # nav: true # uncomment to show submenus in the top menu
 nav: false
 nav_order: 8
 dropdown: true
 children:
-  - title: bookshelf
+  - title: Bookshelf
     permalink: /books/
   - title: divider
-  - title: blog
+  - title: Blog
     permalink: /blog/
 ---

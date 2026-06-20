@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: "<a href='#'>Caltech</a>. Pasadena, CA. Contact me at: lsanmart-at-caltech.edu."
 
