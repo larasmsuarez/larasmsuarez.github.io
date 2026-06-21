@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Activities
+title: Activities and Talks
 permalink: /activities/
 nav: true
-nav_order: 4
+nav_order: 3
 ---
 
 {% if site.data.conferences and site.data.conferences.size > 0 %}
