@@ -190,11 +190,15 @@
     {% endif %}
     {% assign entrytype_text = entrytype | strip_html | strip %}
     {% capture periodical %}{{ entrytype }}{% if entrytype_text != "" and entryyear != "" %}, {% endif %}{{ entrymonth }}{{ entryyear }}{% endcapture %}
-    {% unless page.permalink == '/publications/' %}
+    {% assign show_periodical = true %}
+    {% if page.permalink == '/publications/' or page.permalink == '/' %}
+      {% assign show_periodical = false %}
+    {% endif %}
+    {% if show_periodical %}
       <div class="periodical">
         {{ periodical | strip }}
       </div>
-    {% endunless %}
+    {% endif %}
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
