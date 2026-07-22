@@ -160,11 +160,7 @@
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
-      {% if entry.arxiv_url and entry.journal contains 'ArXiv' %}
-        {% capture entrytype %}<em><a href="{{ entry.arxiv_url }}" target="_blank" rel="noopener noreferrer">{{ entry.journal }}</a></em>{% endcapture %}
-      {% else %}
-        {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
-      {% endif %}
+      {% capture entrytype %}<em>{{ entry.journal }}</em>{% endcapture %}
     {% elsif proceedings contains entry.type %}
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
@@ -175,7 +171,11 @@
     {% if entry.month %}
       {% capture entrymonth %}{{ " " }}{{ entry.month | capitalize }}{% endcapture %}
     {% endif %}
-    {% if entry.year %}
+    {% assign hide_publication_year = false %}
+    {% if page.permalink == '/publications/' %}
+      {% assign hide_publication_year = true %}
+    {% endif %}
+    {% if entry.year and hide_publication_year == false %}
       {% capture entryyear %}{{ " " }}{{ entry.year }}{% endcapture %}
     {% endif %}
     {% if entry.location %}
