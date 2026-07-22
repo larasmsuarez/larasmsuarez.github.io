@@ -8,10 +8,6 @@ profile:
   align: right
   image: 2026_headshot.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>MC 253-37 Linde Hall of Mathematics</p>
-    <p>1200 E California Blvd</p>
-    <p>Pasadena, CA 91125</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
