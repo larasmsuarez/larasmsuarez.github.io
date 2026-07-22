@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-activities",
-          title: "Activities",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/activities/";
-          },
-        },{id: "nav-articles",
+  },{id: "nav-articles",
           title: "Articles",
           description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
+          },
+        },{id: "nav-activities-and-talks",
+          title: "Activities and Talks",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/activities/";
           },
         },{id: "nav-projects",
           title: "Projects",
@@ -405,16 +405,16 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "news-new-version-of-my-arxiv-paper-quantum-invariants-and-fiberedness",
+          title: 'New version of my ArXiv paper Quantum Invariants and Fiberedness.',
           description: "",
           section: "News",},{id: "news-i-was-awarded-the-2026-scott-russell-johnson-achievement-award-for-excellence-in-graduate-studies",
           title: 'I was awarded the 2026 Scott Russell Johnson Achievement Award for Excellence in...',
