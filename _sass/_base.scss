@@ -720,6 +720,10 @@ footer.sticky-bottom {
   .publications {
     margin-top: 0;
 
+    &.selected-publications .periodical {
+      display: none;
+    }
+
     ol.bibliography {
       margin-left: 0;
       padding-left: 0;
