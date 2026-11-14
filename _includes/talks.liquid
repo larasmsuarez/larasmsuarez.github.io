@@ -13,12 +13,11 @@
               <strong>{{ talk.event }}</strong>
             {%- endif -%}
             .
-            {%- if talk.role != blank %}
-              <em>{{ talk.role }}</em>.
-            {%- endif %}
             {% if talk.location != blank %}
-              <br>
               {{ talk.location }}.
+            {% endif %}
+            {% if talk.role != blank %}
+              <em>{{ talk.role }}</em>.
             {% endif %}
             {% if talk.based_on != blank %}
               <br>
