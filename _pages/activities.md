@@ -7,6 +7,7 @@ nav_order: 3
 ---
 
 {% if site.data.conferences and site.data.conferences.size > 0 %}
+
   <section class="about-section">
     <h2>Conferences</h2>
     {% include talks.liquid talks=site.data.conferences %}
@@ -14,6 +15,7 @@ nav_order: 3
 {% endif %}
 
 {% if site.data.seminar_talks and site.data.seminar_talks.size > 0 %}
+
   <section class="about-section">
     <h2>Seminar Talks</h2>
     {% include talks.liquid talks=site.data.seminar_talks %}
