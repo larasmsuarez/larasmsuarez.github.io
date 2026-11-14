@@ -34,10 +34,8 @@
               {% else %}
                 {% assign slides_url = talk.slides_url | relative_url %}
               {% endif %}
-              <br>
               <a href="{{ slides_url }}" target="_blank" rel="noopener noreferrer">{{ talk.slides }}</a>.
             {% elsif talk.slides != blank %}
-              <br>
               {{ talk.slides }}.
             {% endif %}
           </td>
