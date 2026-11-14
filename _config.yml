@@ -222,6 +222,11 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      published: false
 
 sass:
   style: compressed
