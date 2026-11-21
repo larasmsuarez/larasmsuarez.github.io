@@ -1,3 +1,12 @@
+- date: November 16-19, 2026
+  event: Categorification in Quantum Topology
+  location: UCLA, Los Angeles, USA
+  role: Attendee
+  based_on: 2026 ArXiv preprint
+  based_on_url: https://arxiv.org/abs/2609.12311
+  slides: Poster
+  slides_url: /assets/pdf/Poster_IPAM_Nov16.pdf
+  event_url: https://www.ipam.ucla.edu/programs/workshops/workshop-iii-categorification-in-quantum-topology/
 - date: October 12-16, 2026
   event: Modularity and quantum topology
   location: Caltech, Pasadena, USA
