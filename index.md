@@ -24,5 +24,5 @@ latest_posts:
 ---
 
 My name is Lara and my [surnames](https://en.wikipedia.org/wiki/Spanish_naming_customs) are San Martín and Suárez. I am currently a PhD candidate at Caltech, and part of the [Quantum topology group](https://topology.fyi) run by my advisor [Prof. Sergei Gukov](https://www.gukov.caltech.edu/). 
-I am an affiliated student of the [Simons Collaboration New Structures in Low-Dimensional Topology](https://sites.google.com/view/simons-newstructures/our-team/affiliated-graduate-students).
+I am an affiliated student of the [Simons Collaboration New Structures in Low-Dimensional Topology](https://sites.google.com/view/simons-newstructures/home?authuser=0).
 Between September 2024 and September 2026, I was funded by [La Caixa Foundation](https://lacaixafoundation.org/en/). 
