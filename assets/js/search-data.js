@@ -66,7 +66,10 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/scott-russell-johnson-achievement-award/";
-            },},{id: "projects-project-1",
+            },},{id: "news-",
+          title: '',
+          description: "",
+          section: "News",},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
